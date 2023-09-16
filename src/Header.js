@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
-import Iconballoons from "./Iconballoons.svg";
+import Iconballoons from "./Images/Iconballoons.svg";
 
 import { FcMenu } from "react-icons/fc";
 
@@ -85,19 +85,16 @@ export const Header = () => {
 
           <Box>
             <Typography
-              style={{ cursor: "pointer" }}
               variant="body1"
               fontFamily={"inherit"}
               fontSize={"20px"}
-              className="no-decoration"
-              sx={{
-                "&:hover": {
-                  color: "white",
-                },
-              }}
             >
               <a
-                style={{ textDecoration: "none", color: "grey" }}
+                style={{
+                  textDecoration: "none",
+                  color: "grey",
+                  fontWeight: "bold",
+                }}
                 href="#home"
                 onClick={(e) => handleNavLinkClick(e, "home")}
                 onMouseOver={(e) => (e.target.style.color = "white")}
@@ -110,13 +107,16 @@ export const Header = () => {
 
           <Box>
             <Typography
-              style={{ cursor: "pointer", color: "grey" }}
               variant="body1"
               fontFamily={"inherit"}
               fontSize={"20px"}
             >
               <a
-                style={{ textDecoration: "none", color: "grey" }}
+                style={{
+                  textDecoration: "none",
+                  color: "grey",
+                  fontWeight: "bold",
+                }}
                 href="https://forms.gle/StVN35VGAt73f2JL7"
                 target="_bank"
                 rel="noopener noreferrer"
@@ -151,13 +151,16 @@ export const Header = () => {
 
           <Box>
             <Typography
-              style={{ cursor: "pointer" }}
               variant="body1"
               fontFamily={"inherit"}
               fontSize={"20px"}
             >
               <a
-                style={{ textDecoration: "none", color: "grey" }}
+                style={{
+                  textDecoration: "none",
+                  color: "grey",
+                  fontWeight: "bold",
+                }}
                 href="#location"
                 onMouseOver={(e) => (e.target.style.color = "white")}
                 onMouseOut={(e) => (e.target.style.color = "grey")}
@@ -171,12 +174,15 @@ export const Header = () => {
           <Box>
             <Typography
               variant="body1"
-              style={{ cursor: "pointer" }}
               fontFamily={"inherit"}
               fontSize={"20px"}
             >
               <a
-                style={{ textDecoration: "none", color: "grey" }}
+                style={{
+                  textDecoration: "none",
+                  color: "grey",
+                  fontWeight: "bold",
+                }}
                 href="#footer"
                 onMouseOver={(e) => (e.target.style.color = "white")}
                 onMouseOut={(e) => (e.target.style.color = "grey")}
@@ -190,12 +196,15 @@ export const Header = () => {
           <Box>
             <Typography
               variant="body1"
-              style={{ cursor: "pointer" }}
               fontFamily={"inherit"}
               fontSize={"20px"}
             >
               <a
-                style={{ textDecoration: "none", color: "grey" }}
+                style={{
+                  textDecoration: "none",
+                  color: "grey",
+                  fontWeight: "bold",
+                }}
                 href="#footer"
                 onMouseOver={(e) => (e.target.style.color = "white")}
                 onMouseOut={(e) => (e.target.style.color = "grey")}
@@ -212,9 +221,9 @@ export const Header = () => {
         <Box>
           <Button
             id="fade-button"
-            aria-controls={open ? 'basic-menu' : undefined}
+            aria-controls={open ? "basic-menu" : undefined}
             aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
+            aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
             <FcMenu />
@@ -236,72 +245,67 @@ export const Header = () => {
           >
             <MenuItem>
               <Typography>
-              <a
-                style={{ textDecoration: "none", color:"white" }}
-                href="#footer"
-                onMouseOver={(e) => e.target.style.color = "grey"}
-                onMouseOut={(e) => e.target.style.color = "white"}
-                onClick={(e) => handleNavLinkClick(e, "home")}
-              >
-                Inicio
-              </a>
-              </Typography>
-            </MenuItem>
-
-            <MenuItem >
-              <Typography>
-              <a
-                style={{ textDecoration: "none", color: "white" }}
-                href="https://forms.gle/StVN35VGAt73f2JL7"
-                target="_bank"
-                rel="noopener noreferrer"
-                onMouseOver={(e) => (e.target.style.color = "grey")}
-                onMouseOut={(e) => (e.target.style.color = "white")}
-              >
-                Inscrição
-              </a> 
+                <a
+                  href="#footer"
+                  onMouseOver={(e) => (e.target.style.color = "grey")}
+                  onMouseOut={(e) => (e.target.style.color = "white")}
+                  onClick={(e) => handleNavLinkClick(e, "home")}
+                >
+                  Inicio
+                </a>
               </Typography>
             </MenuItem>
 
             <MenuItem>
               <Typography>
-              <a
-                style={{ textDecoration: "none", color:"white" }}
-                href="#footer"
-                onMouseOver={(e) => e.target.style.color = "grey"}
-                onMouseOut={(e) => e.target.style.color = "white"}
-                onClick={(e) => handleNavLinkClick(e, "schedule")}
-              >
-                Datas
-              </a>
+                <a
+                  href="https://forms.gle/StVN35VGAt73f2JL7"
+                  target="_bank"
+                  rel="noopener noreferrer"
+                  onMouseOver={(e) => (e.target.style.color = "grey")}
+                  onMouseOut={(e) => (e.target.style.color = "white")}
+                >
+                  Inscrição
+                </a>
               </Typography>
             </MenuItem>
 
             <MenuItem>
               <Typography>
-              <a
-                style={{ textDecoration: "none", color:"white" }}
-                href="#footer"
-                onMouseOver={(e) => e.target.style.color = "grey"}
-                onMouseOut={(e) => e.target.style.color = "white"}
-                onClick={(e) => handleNavLinkClick(e, "location")}
-              >
+                <a
+                  href="#footer"
+                  onMouseOver={(e) => (e.target.style.color = "grey")}
+                  onMouseOut={(e) => (e.target.style.color = "white")}
+                  onClick={(e) => handleNavLinkClick(e, "schedule")}
+                >
+                  Datas
+                </a>
+              </Typography>
+            </MenuItem>
+
+            <MenuItem>
+              <Typography>
+                <a
+                  href="#footer"
+                  onMouseOver={(e) => (e.target.style.color = "grey")}
+                  onMouseOut={(e) => (e.target.style.color = "white")}
+                  onClick={(e) => handleNavLinkClick(e, "location")}
+                >
                   Localização
-              </a>
+                </a>
               </Typography>
             </MenuItem>
 
             <MenuItem>
               <Typography>
-              <a
-                style={{ textDecoration: "none", color:"white" }}
-                href="#footer"
-                onMouseOver={(e) => e.target.style.color = "grey"}
-                onMouseOut={(e) => e.target.style.color = "white"}
-                onClick={(e) => handleNavLinkClick(e, "footer")}
-              >
-                Contatos
-              </a>
+                <a
+                  href="#footer"
+                  onMouseOver={(e) => (e.target.style.color = "grey")}
+                  onMouseOut={(e) => (e.target.style.color = "white")}
+                  onClick={(e) => handleNavLinkClick(e, "footer")}
+                >
+                  Contatos
+                </a>
               </Typography>
             </MenuItem>
           </Menu>
