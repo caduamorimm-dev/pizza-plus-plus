@@ -1,7 +1,7 @@
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import Box from "@mui/material/Box";
-import backgroundSVG from "./Images/backgroundSVG.svg";
+import background from "./Images/background.png";
 
 import { Home } from "./Components/Home";
 import { Schedule } from "./Components/Schedule";
@@ -25,7 +25,7 @@ function App() {
   return (
     <Box
       sx={{
-        backgroundImage: `url(${backgroundSVG})`,
+        backgroundImage: `url(${background})`,
         backgroundRepeat: "repeat-y",
         backgroundSize: "cover",
         backgroundPosition: "center",
