@@ -32,6 +32,7 @@ function App() {
         width: "100vw",
         minHeight: "100vh",
         display: "flex",
+        overflowX:"hidden"
       }}
     >
       <Box>
@@ -46,6 +47,7 @@ function App() {
             width: "100vw",
             display: "flex",
             background: "white",
+            overflowX:"hidden"
           }}
           marginTop={15}
         >
@@ -60,7 +62,7 @@ function App() {
           <Location />
         </section>
 
-        <section id="footer" style={{ width: "100vw" }}>
+        <section id="footer" style={{ width: "100vw",overflowX:"hidden" }}>
           <Footer />
         </section>
       </Box>
